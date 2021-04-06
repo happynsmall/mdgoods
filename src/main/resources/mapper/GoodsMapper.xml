@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.microservices.sample.data.GoodsDao">
+
+	<select id="selectGoods" resultType="Goods">
+	    select 
+	    	*
+	    from MD_GOODS_BAS limit 10;
+	</select>
+	
+	<select id="selectGoodsById" parameterType="String" resultType="Goods">
+	    select 
+	    	*
+	    from MD_GOODS_BAS
+	    where GOODS_CD = #{goodsCd}
+	</select>		
+	
+	
+	<!-- 
+		사용자 정보 등록하기 
+	 -->
+	<insert id="insertGoods" parameterType="Goods">
+		insert into MD_GOODS_BAS (
+			GOODS_NM,
+			GOODS_PRICE,
+			GOODS_IMG
+		) values (	
+			#{goodsNm},
+			#{goodsPrice},
+			#{goodsImg}
+		)
+	</insert>
+	
+	<!-- 
+		사용자 정보 변경하기 
+	 -->
+	<update id="updateGoods" parameterType="UpdateGoods">
+		update 
+			MD_GOODS_BAS
+		set
+			GOODS_NM = #{goodsNm},
+			GOODS_PRICE = #{goodsPrice},
+			GOODS_IMG = #{goodsImg}
+		where GOODS_CD = #{goodsCd}
+	</update>
+	
+	<!-- 
+		사용자 정보 삭제하기 
+	 -->
+	<delete id="deleteGoods" parameterType="String">
+		delete from MD_GOODS_BAS
+		where GOODS_CD = #{goodsCd}
+	</delete>
+	
+	
+	<!-- 
+		테스트 사용자 정보 등록하기 
+	 -->
+	<insert id="createTestGoods" parameterType="HashMap">
+		insert into MD_GOODS_BAS (
+			GOODS_CD,
+			GOODS_NM,
+			GOODS_PRICE,
+			GOODS_IMG
+		) values 
+		<foreach collection='list' index='index' item='user' separator=','>
+		(	
+			#{goodsCd},
+			#{goodsNm},
+			#{goodsPrice},
+			#{goodsImg}
+		)		
+		</foreach>
+		
+		
+		
+	</insert>
+</mapper>
