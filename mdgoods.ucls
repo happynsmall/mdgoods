@@ -2,8 +2,8 @@
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="com.springboot.microservices.sample.presentation.UserController" 
-    project="mvp-sample-springboot" 
-    file="/mvp-sample-springboot/src/main/java/com/springboot/microservices/sample/presentation/UserController.java" 
+    project="mdgoods" 
+    file="/mdgoods/src/main/java/com/springboot/microservices/sample/presentation/UserController.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="194" y="186"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -13,8 +13,8 @@
     </display>  
   </class>  
   <class id="2" language="java" name="com.springboot.microservices.sample.service.UserService" 
-    project="mvp-sample-springboot" 
-    file="/mvp-sample-springboot/src/main/java/com/springboot/microservices/sample/service/UserService.java" 
+    project="mdgoods" 
+    file="/mdgoods/src/main/java/com/springboot/microservices/sample/service/UserService.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="606" y="185"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -24,8 +24,8 @@
     </display>  
   </class>  
   <class id="3" language="java" name="com.springboot.microservices.sample.domain.UserDomain" 
-    project="mvp-sample-springboot" 
-    file="/mvp-sample-springboot/src/main/java/com/springboot/microservices/sample/domain/UserDomain.java" 
+    project="mdgoods" 
+    file="/mdgoods/src/main/java/com/springboot/microservices/sample/domain/UserDomain.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="288" y="455"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -35,8 +35,8 @@
     </display>  
   </class>  
   <class id="4" language="java" name="com.springboot.microservices.sample.domain.TestDomain" 
-    project="mvp-sample-springboot" 
-    file="/mvp-sample-springboot/src/main/java/com/springboot/microservices/sample/domain/TestDomain.java" 
+    project="mdgoods" 
+    file="/mdgoods/src/main/java/com/springboot/microservices/sample/domain/TestDomain.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="857" y="419"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -46,8 +46,8 @@
     </display>  
   </class>  
   <interface id="5" language="java" name="com.springboot.microservices.sample.data.UserDao" 
-    project="mvp-sample-springboot" 
-    file="/mvp-sample-springboot/src/main/java/com/springboot/microservices/sample/data/UserDao.java" binary="false" 
+    project="mdgoods" 
+    file="/mdgoods/src/main/java/com/springboot/microservices/sample/data/UserDao.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="595" y="672"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: mvp-sample-springboot
+    name: mdgoods
   profiles:
     active: ${profile:local}
     include: common 
