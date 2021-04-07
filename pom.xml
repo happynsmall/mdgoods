@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.springboot.microservices.sample</groupId>
-	<artifactId>mvp-sample-springboot</artifactId>
+	<artifactId>mdgoods</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mvp-sample-springboot</name>
+	<name>mdgoods</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -108,7 +108,7 @@
 	</dependencyManagement>
 	
 	<build>
-		<finalName>mvp-sample-springboot</finalName>
+		<finalName>mdgoods</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
