@@ -21,10 +21,12 @@
 	 -->
 	<insert id="insertGoods" parameterType="Goods">
 		insert into MD_GOODS_BAS (
+			GOODS_CD,
 			GOODS_NM,
 			GOODS_PRICE,
 			GOODS_IMG
 		) values (	
+			#{goodsCd},
 			#{goodsNm},
 			#{goodsPrice},
 			#{goodsImg}
