@@ -35,7 +35,7 @@ public class GoodsService {
 		return goodsDomain.setGoodsUpdate(goodsCd, sampleGoods);
 	}
 	
-	public ResponseEntity <String > setGoodsInsert(UpdateGoods sampleGoods) throws Exception { 
+	public ResponseEntity <String > setGoodsInsert(Goods sampleGoods) throws Exception { 
 		return goodsDomain.setGoodsInsert(sampleGoods);		
 	}
 
