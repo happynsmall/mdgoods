@@ -44,7 +44,7 @@ public interface GoodsDao {
 	 * @return
 	 * @throws Exception
 	 */
-	int insertGoods(UpdateGoods sampleGoods) throws Exception;
+	int insertGoods(Goods sampleGoods) throws Exception;
 	
 	/**
 	 * 사용자 정보 삭제하기 

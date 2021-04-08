@@ -58,7 +58,7 @@ public class GoodsController {
 	@PostMapping("/goods")
 	@ApiOperation(value="상품 정보 등록하기 ")
 	public ResponseEntity <String > setGoodsInsert(
-			@RequestBody UpdateGoods sampleGoods
+			@RequestBody Goods sampleGoods
 		) throws Exception { 
 		
 		return goodsService.setGoodsInsert(sampleGoods);

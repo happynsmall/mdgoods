@@ -71,7 +71,7 @@ public class GoodsDomain {
 	/*
 	 * setGoodsInsert: 상품 추가 
 	 */
-	public ResponseEntity <String > setGoodsInsert(UpdateGoods sampleGoods) throws Exception { 
+	public ResponseEntity <String > setGoodsInsert(Goods sampleGoods) throws Exception { 
 		log.info("Start db insert");
 		int re  = sampleGoodsDao.insertGoods(sampleGoods);
 		log.debug("result :"+ re);
