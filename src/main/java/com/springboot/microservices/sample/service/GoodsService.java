@@ -22,7 +22,7 @@ public class GoodsService {
 	
 	@Autowired 
 	private TestDomain testDomain;
-	
+	 
 	public ResponseEntity <List<Goods>> getGoodsList() { 
 		return goodsDomain.getGoodsList();
 	}
