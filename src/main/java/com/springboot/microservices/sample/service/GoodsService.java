@@ -20,7 +20,7 @@ public class GoodsService {
 	@Autowired
 	private GoodsDomain goodsDomain;
 	
-	@Autowired
+	@Autowired 
 	private TestDomain testDomain;
 	
 	public ResponseEntity <List<Goods>> getGoodsList() { 
