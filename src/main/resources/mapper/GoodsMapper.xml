@@ -42,7 +42,8 @@
 		set
 			GOODS_NM = #{goodsNm},
 			GOODS_PRICE = #{goodsPrice},
-			GOODS_IMG = #{goodsImg}
+			GOODS_IMG = #{goodsImg},
+			updated = now()
 		where GOODS_CD = #{goodsCd}
 	</update>
 	
